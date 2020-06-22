@@ -126,7 +126,7 @@ int main(int argc, char* argv[])
     if (!init_resources())
         return EXIT_FAILURE;
     
-    std::cout << glGetString(GL_VENDOR) << std::endl;
+    std::cout << glGetString(GL_VENDOR) << glGetString(GL_VERSION) << std::endl;
     
     mainLoop(window);
 
